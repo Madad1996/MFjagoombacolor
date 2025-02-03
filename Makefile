@@ -1,4 +1,4 @@
-MAKEFILE	:=	makefile
+MAKEFILE	:=	Makefile
 
 #---------------------------------------------------------------------------------
 # Clear the implicit built in rules
@@ -45,7 +45,7 @@ include $(DEVKITARM)/gba_rules
 # SOURCES is a list of directories containing source code
 # INCLUDES is a list of directories containing extra header files
 #---------------------------------------------------------------------------------
-TARGET		:=	jagoombacolor
+TARGET		:=	MFjagoombacolor
 BUILD		:=	build
 SOURCES		:=	src
 INCLUDES	:=
@@ -143,6 +143,11 @@ export LIBPATHS	:=	$(foreach dir,$(LIBDIRS),-L$(dir)/lib)
 $(BUILD):
 	@[ -d $@ ] || mkdir -p $@
 	@make --no-print-directory -C $(BUILD) -f $(CURDIR)/$(MAKEFILE)
+
+rename_objects:
+	@mv $(BUILD)/font.lz77.o $(BUILD)/font.o
+	@mv $(BUILD)/fontpal.bin.o $(BUILD)/fontpal.o
+
 
 all	: $(BUILD)
 #---------------------------------------------------------------------------------

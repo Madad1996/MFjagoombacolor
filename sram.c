@@ -1421,7 +1421,8 @@ void writeconfig()
 	if(i<0) {//make new config
 		memcpy(compressed_save,&configtemplate,sizeof(configdata));
 		//cfg=current_save_file;
-		cfg = (configdata*) current_save_file;	}
+		cfg = (configdata*) current_save_file;
+	}
 //	cfg->bordercolor=bcolor;					//store current border type
 	cfg->palettebank=palettebank;				//store current DMG palette
 	j = stime & 0x3;							//store current autosleep time

@@ -15,7 +15,7 @@ To build:
 - Install the latest DevkitPro GBA tools
 - Navigate Msys2 to this directory
 - make
-- Rename font.lz77.o to font.o and fontpal.bin.o to fontpal.o
+- make rename_objects
 - make
 
 To test, I build a ROM with the resulting jagoombacolor.gba and the game I'm testing using goombafront.exe, then run it in mGBA.  You can find goombafront.exe as part of the Goomba Color releases.  For helpful debug symbols, take jagoombacolor.elf, put it in the same directory as the built ROM, and rename it to (ROM name).elf.  (Thanks to Endrift for the tip.)
