@@ -1,4 +1,4 @@
-Jaga's Goomba Color fork
+Mad_ad's Fork of Jaga's Goomba Color fork
 
 A fork of Goomba Color with the goal of fixing bugs and incompatibilities in the original.  Based on the 2019-05-04 source.
 
