@@ -302,6 +302,7 @@ void C_entry()
 		roms=i;
 		if(!i)roms=1;					//Stop Goomba from crashing if there are no ROMs
 		
+		
 		if (i == 0)
 		{
 			get_ready_to_display_text();
@@ -313,7 +314,7 @@ void C_entry()
 			drawtext(2,"to build a compilation ROM,",0);
 			drawtext(3,"or use Pogoshell with a",0);
 			drawtext(4,"supported flash cartridge.",0);
-			drawtext(19,"Goomba Color " VERSION,0);
+			drawtext(19,"MFJagoomGoomba Color " VERSION,0);
 			while (1)
 			{
 				waitframe();
